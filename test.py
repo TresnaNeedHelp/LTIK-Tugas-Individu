@@ -72,7 +72,7 @@ def volumeBalok(p, l, t):
     print(VBalok)
 
 def volumeKubus(s):
-    VKubus = s * 6
+    VKubus = s ** 3
     print(VKubus)
 
 def piramidBintang(baris):
@@ -110,12 +110,12 @@ inputuser = int(input("Pilih pilihan 1-5: "))
 if inputuser == 1:
     print("Ini adalah program membuat piramida bintang")
     Keinginan = int(input("Masukkan tinggi piramid: "))
-    piramidBalok(Keinginan)
+    piramidBintang(Keinginan)
 
 if inputuser == 2:
     print("Ini adalah program membuat piramida balok")
     Keinginan = int(input("Masukkan tinggi piramid: "))
-    piramidBintang(Keinginan)
+    piramidBalok(Keinginan)
 
 if inputuser == 3:
     print("Ini adalah program menghitung volume balok")

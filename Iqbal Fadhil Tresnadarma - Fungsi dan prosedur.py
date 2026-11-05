@@ -10,7 +10,7 @@ def deretFibonaci(TotalDeretanAngka):
     listFibonaci.append(a)
     listFibonaci.append(b)
 
-    for tiapangka in range (TotalDeretanAngka):
+    for tiapangka in range (max(TotalDeretanAngka - 2, 0)):
         c = a + b
 
         listFibonaci.append(c)
@@ -43,6 +43,8 @@ def nilai_total(*angka):
 def nilai_rata_rata(*angka):
     total = sum(angka)
     jumlah_angka = len(angka)
+    if jumlah_angka == 0:
+        return 0
     rata_rata = total / jumlah_angka
     return rata_rata
 
@@ -60,7 +62,6 @@ def login (PasswordInput):
     kesempatan = 2
     password = "Latihan"
 
-    PasswordInput = ""
     while kesempatan > 0 :
         if PasswordInput == password :
             print("Selamat datang Daspro2023 !")

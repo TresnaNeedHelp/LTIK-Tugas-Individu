@@ -107,7 +107,7 @@ else:
 
 print()
 
-
+#peinsgandkgjn
 
 print("Latihan 3 - konversi waktu")
 
